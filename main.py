@@ -79,3 +79,42 @@ update, intersection_update, difference update, symmetric_difference update, is_
 # print(f"Hello there {f_name} {l_name}") - new
 
 # collections - special data types
+
+# my_list = [i for i in range(1, 100000)]
+
+# def is_prime(num):
+#     for i in range(2, num):
+#         if (num % i == 0):
+#             return False
+#     return True
+
+# only_prime = list(filter(is_prime, my_list))
+# print(only_prime)
+# my_list = [i for i in range(1, 100)]
+# print(list(map(lambda x: x ** 2, my_list)))
+
+# import sys
+# import timeit
+# print(list(map(lambda x: int(x), sys.argv[1].split(','))))
+# print([int(x) for x in sys.argv[1].split(',')])
+
+# print("map", timeit.timeit(stmt="list(map(lambda x: int(x), sys.argv[1].split(',')))"))
+# print("list comprehension", timeit.timeit(stmt="[int(x) for x in sys.argv[1].split(',')]"))
+
+# from pyspark.sql import SparkSession
+# print("step 1")
+# spark = SparkSession.builder.master('local').appName('Athi app').getOrCreate()
+# print("step 2")
+# titanic = spark.read.option("header", True).csv("tested.csv")
+    # .toDF('PassengerId','Survived','Pclass','Name','Sex','Age','SibSp','Parch','Ticket','Fare','Cabin','Embarked')
+# print("step 3")
+# titanic.printSchema()
+# titanic.show()
+# print("step 4")
+
+# import os
+# import json
+
+# with open("test.json") as file:
+#     print(json.load(file))
+
