@@ -118,3 +118,24 @@ update, intersection_update, difference update, symmetric_difference update, is_
 # with open("test.json") as file:
 #     print(json.load(file))
 
+#try:
+#    a = 10 + 5
+#except Exception as e:
+#    print(e)
+#else:
+#    print('all good')
+#finally:
+#    print('inside finally')
+
+#'02:26:51'
+
+# while True:
+#   pass
+
+import threading
+
+
+for i in range(0, 10):
+    t = threading.Thread(target=print, args=[i])
+    print(threading.active_count())
+    t.run()
