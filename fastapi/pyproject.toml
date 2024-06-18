@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fastapii"
+version = "0.1.0"
+description = "it's just me learning fastapi"
+authors = ["Athithyan Rengasamy"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+pydantic = "^2.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
