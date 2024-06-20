@@ -160,3 +160,8 @@ update, intersection_update, difference update, symmetric_difference update, is_
 #     return ans
 
 # print(mySqrt(4))
+
+import base64
+
+with open('athi.webp', 'rb') as my_img:
+    print(base64.b64encode(my_img.read()))
